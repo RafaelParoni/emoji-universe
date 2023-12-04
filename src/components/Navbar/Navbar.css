@@ -1,0 +1,84 @@
+nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+}
+.logoNav {
+    width: auto;
+    margin-inline: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    grid-gap: 10px;
+}
+.logoNav h1{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 780px) {
+    .logoNav h1{
+        display: none;
+    }
+}
+.buttonsNav {
+    display: flex;
+    width: auto;
+    overflow-x: auto;
+    margin-inline: 5px;
+}
+
+.buttonsNav::-webkit-scrollbar {
+    height: 5px;
+}
+.buttonsNav::-webkit-scrollbar-track {
+    background: transparent;
+}
+.buttonsNav::-webkit-scrollbar-thumb {
+    background-color: #FFD42A;
+    border-radius: 10px;
+}
+.buttonsNav button {
+    cursor: pointer;
+    border: none;
+    border-bottom: 5px solid transparent;
+    color: #fff;
+    background-color: transparent;
+    transition: 0.4s ease-in;
+}
+.buttonsNav button:hover {
+    border-bottom: 5px solid #FFD42A;
+    color: #FFD42A;
+}
+
+
+.socialNav {
+    display: flex;
+    width: auto;
+    overflow-x: auto;
+    grid-gap: 5px;
+    margin-inline: 5px;
+    width: auto;
+    font-size: 35px;
+}
+
+.socialNav::-webkit-scrollbar {
+    height: 5px;
+}
+.socialNav::-webkit-scrollbar-track {
+    background: transparent;
+}
+.socialNav::-webkit-scrollbar-thumb {
+    background-color: #FFD42A;
+    border-radius: 10px;
+}
