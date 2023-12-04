@@ -4,4 +4,4 @@ EN-US | Site where you can copy an emoji to the clipboard of your computer or ce
 
 PT-BR | site feito com a intenção de facilitar para quem quer "copiar" os emojis para a área de transferência, podendo assim utilizá-los em outros projetos
 
-# em desenvolvimento!
+# site em desenvolvimento!
