@@ -1,0 +1,70 @@
+footer {
+    background-color: #1d1d1d;
+    width: 100vw;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-top: 1px solid #FFD42A;
+}
+/* Pages Div */
+.pages { 
+    grid-area: 1 / 1 / 3 / 7; 
+    display: flex;
+    padding-left: 25px;
+}
+.pages img {
+    margin-inline: 5px;
+}
+.pages button {
+    cursor: pointer;
+    border: none;
+    border-top: 3px solid transparent;
+    color: #fff;
+    background-color: transparent;
+    transition: 0.4s ease-in;
+}
+.pages button:hover {
+    border-top: 3px solid #FFD42A;
+    color: #FFD42A;
+}
+
+/* about Div */
+.about { 
+    grid-area: 3 / 1 / 9 / 3; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.about h4 {
+    margin: 0;
+    padding: 0;
+}
+
+/* social Div */
+.social { 
+    grid-area: 3 / 3 / 9 / 5; 
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social div:nth-child(1){
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    
+}
+.social div:nth-child(2){
+    background-color: red;
+}
+
+
+/* credits Div */
+.credits { 
+    grid-area: 3 / 5 / 9 / 7; 
+    background-color: yellow;
+}
