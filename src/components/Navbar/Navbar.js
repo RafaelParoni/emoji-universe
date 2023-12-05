@@ -10,17 +10,17 @@ function NavbarComponent() {
             <h1> EMOJI UNIVERSE</h1>
         </button>
         <div className='buttonsNav'>
-            <button>NOME</button>
-            <button>NOME</button>
-            <button>NOME</button>
-            <button>NOME</button>
-            <button>NOME</button>
-            <button>NOME</button>
+            <button onClick={()=>  window.location.hash = '#faces'}>Carinhas <br/> e Aniamis</button>
+            <button onClick={()=> window.location.hash = '#people'}>Pessoas</button>
+            <button onClick={()=> window.location.hash = '#food'}>Comidas <br/> e plantas</button>
+            <button onClick={()=> window.location.hash = '#celebrations'}>Comemorações <br/> e Objetos</button>
+            <button onClick={()=> window.location.hash = '#transport'}>Transporte <br/> e locais </button>
+            <button onClick={()=> window.location.hash =  '#symbols'}>Símbolos</button>
         </div>
         <div className='socialNav'>
-            <button><LuGithub size={30}/></button>
-            <button><LuGlobe size={30}/></button>
-            <button><LuInstagram size={30}/></button>
+            <button onClick={()=> window.open('https://github.com/RafaelParoni/')}><LuGithub size={30}/></button>
+            <button onClick={()=> window.open('https://rafaelparoni.vercel.app/')}><LuGlobe size={30}/></button>
+            <button onClick={()=> window.open('https://www.instagram.com/rafaelparroni/')}><LuInstagram size={30}/></button>
         </div>
     </nav>
   );

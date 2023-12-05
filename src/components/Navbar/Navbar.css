@@ -51,13 +51,13 @@ nav {
 .buttonsNav button {
     cursor: pointer;
     border: none;
-    border-bottom: 5px solid transparent;
+    border-bottom: 3px solid transparent;
     color: #fff;
     background-color: transparent;
     transition: 0.4s ease-in;
 }
 .buttonsNav button:hover {
-    border-bottom: 5px solid #FFD42A;
+    border-bottom: 3px solid #FFD42A;
     color: #FFD42A;
 }
 
@@ -81,4 +81,17 @@ nav {
 .socialNav::-webkit-scrollbar-thumb {
     background-color: #FFD42A;
     border-radius: 10px;
+}
+
+.socialNav button{
+    cursor: pointer;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: #fff;
+    background-color: transparent;
+    transition: 0.4s ease-in;
+}
+.socialNav button:hover {
+    border-bottom: 3px solid #FFD42A;
+    color: #FFD42A;
 }
