@@ -26,7 +26,7 @@ nav {
     margin: 0;
     padding: 0;
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 850px) {
     .logoNav h1{
         display: none;
     }
@@ -35,11 +35,13 @@ nav {
     display: flex;
     width: auto;
     overflow-x: auto;
+    overflow-y: none;
     margin-inline: 5px;
 }
 
 .buttonsNav::-webkit-scrollbar {
     height: 5px;
+    width: 0;
 }
 .buttonsNav::-webkit-scrollbar-track {
     background: transparent;
@@ -94,4 +96,10 @@ nav {
 .socialNav button:hover {
     border-bottom: 3px solid #FFD42A;
     color: #FFD42A;
+}
+
+@media only screen and (max-width: 850px) {
+    .socialNav{
+        display: none;
+    }
 }
