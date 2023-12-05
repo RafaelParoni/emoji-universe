@@ -70,6 +70,7 @@ nav {
     overflow-x: auto;
     grid-gap: 5px;
     margin-inline: 5px;
+    margin-right: 20px;
     width: auto;
     font-size: 35px;
 }
