@@ -59,8 +59,8 @@ nav {
     transition: 0.4s ease-in;
 }
 .buttonsNav button:hover {
-    border-bottom: 3px solid #FFD42A;
-    color: #FFD42A;
+    border-bottom: 3px solid #EF6567;
+    color: #EF6567;
 }
 
 
@@ -82,7 +82,7 @@ nav {
     background: transparent;
 }
 .socialNav::-webkit-scrollbar-thumb {
-    background-color: #FFD42A;
+    background-color: #EF6567;
     border-radius: 10px;
 }
 
@@ -95,8 +95,8 @@ nav {
     transition: 0.4s ease-in;
 }
 .socialNav button:hover {
-    border-bottom: 3px solid #FFD42A;
-    color: #FFD42A;
+    border-bottom: 3px solid #EF6567;
+    color: #EF6567;
 }
 
 @media only screen and (max-width: 850px) {
