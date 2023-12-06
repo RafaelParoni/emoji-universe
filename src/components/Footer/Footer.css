@@ -1,19 +1,37 @@
+.dark:root {
+    --backgroundColor: #414347;
+    --backgroundColorV2: #1e1e1f;
+    --textColor: #fff;
+    --textColorV2: #EF6567;
+}
+:root {
+    --backgroundColor: #F8F7F5;
+    --backgroundColorV2: #8d8d8d;
+    --textColor: #000;
+    --textColorV2: #EF6567;
+}
+
+
 footer {
-    background-color: #1d1d1d;
+    background-color: var(--backgroundColorV2);
+    color: var(--textColor);
     width: 100vw;
-    height: 200px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    border-top: 1px solid #FFD42A;
+    border-top: 1px solid #EF6567;
 }
 /* Pages Div */
 .pages { 
     grid-area: 1 / 1 / 3 / 7; 
     display: flex;
     padding-left: 25px;
+    overflow-x: auto;
+    overflow-y: none;
+    height: 55px;
 }
 .pages img {
     margin-inline: 5px;
@@ -27,8 +45,21 @@ footer {
     transition: 0.4s ease-in;
 }
 .pages button:hover {
-    border-top: 3px solid #FFD42A;
-    color: #FFD42A;
+    border-top: 3px solid #EF6567;
+    color: #EF6567;
+}
+
+
+.pages::-webkit-scrollbar {
+    height: 5px;
+    width: 0;
+}
+.pages::-webkit-scrollbar-track {
+    background: transparent;
+}
+.pages::-webkit-scrollbar-thumb {
+    background-color: #EF6567;
+    border-radius: 10px;
 }
 
 /* about Div */
@@ -38,6 +69,7 @@ footer {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    padding-inline: 5px;
 }
 .about h4 {
     margin: 0;
@@ -47,19 +79,44 @@ footer {
 /* social Div */
 .social { 
     grid-area: 3 / 3 / 9 / 5; 
-    background-color: purple;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .social div:nth-child(1){
-    background-color: green;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    width: 100%;
     
 }
+.social div:nth-child(1) button {
+    font-size: 15px;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.social div:nth-child(1) button:hover {
+    border: 1px solid #EF6567;
+}
 .social div:nth-child(2){
-    background-color: red;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social div:nth-child(2) button {
+    margin: 5px;
+    border: 1px solid #000;
+    padding: 5px;
+    cursor: pointer;
+}
+.social div:nth-child(2) button:hover {
+    border: 1px solid #EF6567;
 }
 
 

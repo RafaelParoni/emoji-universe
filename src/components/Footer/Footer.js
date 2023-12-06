@@ -2,6 +2,7 @@ import './Footer.css';
 
 import favIcon from './../Icons/FavIcon256px.ico'
 import { LuGithub,LuInstagram,LuGlobe   } from "react-icons/lu";
+import { FaWhatsapp } from "react-icons/fa";
 
 function FooterComponent() {
 
@@ -24,17 +25,17 @@ function FooterComponent() {
         </div>
         <div className='social'>
             <div>
-                <button onClick={()=> {window.history.pushState("teste", "teste", "/github")}}><LuGithub/> Github</button>
-                <button onClick={()=> {window.history.pushState("teste", "teste", "/insta")}}><LuInstagram/> Instagram</button>
-                <button>Share</button>
-                <button><LuGlobe/>Meu site</button>
+                <button onClick={()=> window.open('https://github.com/RafaelParoni')} ><LuGithub/> Github</button>
+                <button onClick={()=> window.open('https://www.instagram.com/rafaelparroni/')} ><LuInstagram/> Instagram</button>
+                <button onClick={()=> window.open('')} > <FaWhatsapp/> Share</button>
+                <button onClick={()=> window.open('https://rafaelparoni.vercel.app/inicio')} ><LuGlobe/>Meu site</button>
             </div>
             <div>
                 <span>Outros projetos:</span>
-                <button>SaveMovies</button>
-                <button>Taskins</button>
-                <button>Quest</button>
-                <button>Downloader</button>
+                <button onClick={()=> window.open('https://save-movie.vercel.app/')} >SaveMovies</button>
+                <button onClick={()=> window.open('https://taskin-five.vercel.app/')}>Taskins</button>
+                <button onClick={()=> window.open('https://rafaelparoni.vercel.app/quest')}>Quest</button>
+                <button onClick={()=> window.open('https://downloader-app-sable.vercel.app/')}>Downloader</button>
             </div>
         </div>
         <div className='credits'>
