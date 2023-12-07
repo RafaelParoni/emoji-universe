@@ -1,7 +1,7 @@
 import './Footer.css';
 
 import favIcon from './../Icons/FavIcon256px.ico'
-import { LuGithub,LuInstagram,LuGlobe   } from "react-icons/lu";
+import { LuGithub,LuInstagram,LuGlobe,LuCrown } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa";
 
 function FooterComponent() {
@@ -39,7 +39,10 @@ function FooterComponent() {
             </div>
         </div>
         <div className='credits'>
-
+            <h3><LuCrown/> Credits:</h3>
+            <p>Builder: Rafael Paroni</p>
+            <p>Host: Vercel.app</p>
+            <p>design: Rafael Paroni</p>
         </div>
     </footer>
   );

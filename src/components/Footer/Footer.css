@@ -123,5 +123,12 @@ footer {
 /* credits Div */
 .credits { 
     grid-area: 3 / 5 / 9 / 7; 
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.credits P {
+    margin: 0;
+    padding: 0;
 }
