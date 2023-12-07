@@ -136,3 +136,22 @@ footer {
     color: #EF6567;
     text-decoration: none;
 }
+
+/*Select Lang */
+
+.select-lang {
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.2s;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+.select-lang:hover,
+.select-lang:focus {
+   box-shadow: 0 0 5px 1px #EF6567;
+}
+.select-lang-label {
+    margin-bottom: 10px;
+}

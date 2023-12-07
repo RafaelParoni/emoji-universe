@@ -3,6 +3,7 @@ import './Footer.css';
 import favIcon from './../Icons/FavIcon256px.ico'
 import { LuGithub,LuInstagram,LuGlobe,LuCrown } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa";
+import { MdTranslate } from "react-icons/md";
 
 function FooterComponent() {
 
@@ -39,6 +40,12 @@ function FooterComponent() {
             </div>
         </div>
         <div className='credits'>
+            <span className='select-lang-label'><MdTranslate/> Linguagem</span>
+            <select className='select-lang' name='select-lang'>
+                <option value="pt-br">Português(brasil)</option>
+                <option value="en-us">Inglês</option>
+                <option value="es">Espanhol</option>
+            </select>
             <h3><LuCrown/> Credits:</h3>
             <p>Builder: <a href='https://www.instagram.com/rafaelparroni/'>Rafael Paroni</a></p>
             <p>Host  <a href='https://vercel.com/'>Vercel.app</a></p>
