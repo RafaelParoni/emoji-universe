@@ -132,3 +132,7 @@ footer {
     margin: 0;
     padding: 0;
 }
+.credits a {
+    color: #EF6567;
+    text-decoration: none;
+}

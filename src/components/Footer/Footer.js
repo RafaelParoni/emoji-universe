@@ -40,9 +40,9 @@ function FooterComponent() {
         </div>
         <div className='credits'>
             <h3><LuCrown/> Credits:</h3>
-            <p>Builder: Rafael Paroni</p>
-            <p>Host: Vercel.app</p>
-            <p>design: Rafael Paroni</p>
+            <p>Builder: <a href='https://www.instagram.com/rafaelparroni/'>Rafael Paroni</a></p>
+            <p>Host  <a href='https://vercel.com/'>Vercel.app</a></p>
+            <p>design: <a href='https://www.instagram.com/rafaelparroni/'>Rafael Paroni</a></p>
         </div>
     </footer>
   );
