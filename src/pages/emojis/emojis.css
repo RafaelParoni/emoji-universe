@@ -24,5 +24,35 @@
 
 main {
     width: 100vw;
-    height: 100vh;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+h2 {
+    text-align: center;
+}
+
+.emoji-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 10%;
+    grid-gap: 10px
+}
+.emoji-div button {
+    font-size: 30px;
+    border: 1px solid var(--borderColorV1);
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.emoji-div button:hover{
+    background-color: var(--borderColorV2);
+    transform: scale(1.1);
+}
+.emoji-div button:active{
+    transition: none;
+    background-color: var(--borderColorV3);
+    
 }
