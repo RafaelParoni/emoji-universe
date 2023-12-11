@@ -169,7 +169,17 @@ function Emojis() {
         'Comidas': 'Comidas',
         'Plantas': 'Naturaleza',
         'Comemorações': 'Commemorations',
+        'Objetos': 'Objetos',
+        'Transporte': 'Transporte',
+        'Locais': 'Ubicaciones',
+        'Símbolos': 'Símbolos',
+        'Signal': 'Señal',
+    }
+}
 
+var lang = {}
+
+async function setLang(){
     var langSeletc = window.localStorage.getItem('lang')
 
     switch(langSeletc){
@@ -182,6 +192,9 @@ function Emojis() {
         default: 
             lang = langs.en
         break
+    }
+}
+setLang()
 
 
   function copyEmoji(emoji){
@@ -205,30 +218,6 @@ function Emojis() {
   }
 
   return (
-    <main className='emoji-main'>
-      <h2 id='faces&Animais'> 😀 Faces</h2>
-      <div className='emoji-div'>{Faces.map((Faces) => <DisplayEmoji emoji={Faces} />)}</div>
-      <h2> 👋 Signal </h2>
-      <div className='emoji-div'>{Signal.map((Signal) => <DisplayEmoji emoji={Signal} />)}</div>
-      <h2> 😺 Animais </h2>
-      <div className='emoji-div'>{Animais.map((Animais) => <DisplayEmoji emoji={Animais} />)}</div>
-      <h2 id='people'> 👩 People </h2>
-      <div className='emoji-div'>{People.map((People) => <DisplayEmoji emoji={People} />)}</div>
-      <h2 id='food&Nature'> 🍕 Food </h2>
-      <div className='emoji-div'>{Food.map((Food) => <DisplayEmoji emoji={Food} />)}</div>
-      <h2> 🌵 Nature </h2>
-      <div className='emoji-div'>{Nature.map((Nature) => <DisplayEmoji emoji={Nature} />)}</div>
-      <h2 id='commemorations&objects'> 🎇 Commemorations </h2>
-      <div className='emoji-div'>{Commemorations.map((Commemorations) => <DisplayEmoji emoji={Commemorations} />)}</div>
-      <h2> 🕰️ Objects </h2>
-      <div className='emoji-div'>{Objects.map((Objects) => <DisplayEmoji emoji={Objects} />)}</div>
-      <h2 id='transportation&locations'> 🚗 Transportation </h2>
-      <div className='emoji-div'>{Transportation.map((Transportation) => <DisplayEmoji emoji={Transportation} />)}</div>
-      <h2> 🗺 Locations </h2>
-      <div className='emoji-div'>{Locations.map((Locations) => <DisplayEmoji emoji={Locations} />)}</div>
-      <h2 id='symbols'> ❤️ Symbols </h2>
-      <div className='emoji-div'>{Symbols.map((Symbols) => <DisplayEmoji emoji={Symbols} />)}</div>
-   
     <>
       <main className='emoji-main'>
         <h2 id='faces&Animais'> 😀 {lang.Carinhas}</h2>
