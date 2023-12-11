@@ -56,3 +56,43 @@ h2 {
     background-color: var(--borderColorV3);
     
 }
+
+
+.notification-main {
+    position: fixed;
+    bottom: 25px;
+    right: 50px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+}
+.notifcation {
+    height: 35px;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid var(--textColor);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-inline: 15px;
+    border-radius: 5px;
+    grid-gap: 5px;
+    animation-name: notificationAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes notificationAnimation {
+    from {
+        right: -200px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+
+}
