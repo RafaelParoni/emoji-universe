@@ -135,6 +135,26 @@ function Emojis() {
 
 
 
+  function copyEmoji(emoji){
+    console.log(window.isSecureContext)
+    const noti = document.createElement("div");
+    noti.className = 'notifcation'
+    noti.id = emoji
+
+    if(!window.isSecureContext){
+      noti.innerHTML = "<span>" + lang.AlertMsg + "</span>";
+    }else{
+      navigator.clipboard.writeText(' ' + emoji + '')
+      noti.innerHTML = "<span> " + lang.CopyMsg + "</span> <span id='emojiCopyDispley'> "+ emoji +" </span>";
+    }
+
+    document.getElementById('notifcation').appendChild(noti);
+
+    setTimeout(function(){
+      document.getElementById(emoji).remove()
+    },6000)
+  }
+
   return (
     <main className='emoji-main'>
       <h2 id='faces&Animais'> 😀 Faces</h2>
