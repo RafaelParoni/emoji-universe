@@ -1,3 +1,27 @@
+.dark:root {
+    --textColor: #fff;
+    --textColorV2: #EF6567;
+    --borderColorV1: #fff;
+    --borderColorV2: #ffffff70;
+    --borderColorV3: #ffffffb6;
+}
+.light:root {
+    --textColor: #000;
+
+    --borderColorV1: #000;
+    --borderColorV2: #00000070;
+    --borderColorV3: #000000b6;
+  }
+:root {
+    --textColor: #000;
+
+    --borderColorV1: #000;
+    --borderColorV2: #00000070;
+    --borderColorV3: #000000b6;
+}
+
+
+
 main {
     width: 100vw;
     height: 100vh;

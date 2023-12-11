@@ -1,3 +1,20 @@
+.dark:root {
+  --backgroundColor: #414347;
+  --ScrollBarbackgroundColor: #3b3b3b;
+  --textColor: #fff;
+}
+.light:root {
+  --backgroundColor: #e8eaeb;
+  --ScrollBarbackgroundColor: #bbbbbb;
+  --textColor: #000;
+}
+:root {
+  --backgroundColor: #e8eaeb;
+  --ScrollBarbackgroundColor: #bbbbbb;
+  --textColor: #000;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -7,8 +24,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  background-color: #414347;
-  color: #fff;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
   overflow-x: hidden;
 }
 body::-webkit-scrollbar {
@@ -16,11 +33,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #3b3b3b;    
+  background: var(--ScrollBarbackgroundColor);    
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #fff;    
+  background-color: #EF6567;    
   border-radius: 20px;      
 }
 

@@ -1,10 +1,27 @@
+.dark:root {
+    --backgroundNavColor: #1e1e1fa2;
+    --ShadowBoxColor: rgba(0, 0, 0, 0.1);
+    --textColor: #fff;
+}
+.light:root {
+    --backgroundNavColor: #c4c4c7a2;
+    --ShadowBoxColor: rgba(255, 255, 255, 0.1);
+    --textColor: #000;
+}
+:root {
+    --backgroundNavColor: #c4c4c7a2;
+    --ShadowBoxColor: rgba(255, 255, 255, 0.1);
+    --textColor: #000;
+}
+
+
 nav {
     width: 100vw;
     height: 50px;
     display: flex;
     justify-content: space-between;
-    background: #1e1e1fa2;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: var(--backgroundNavColor);
+    box-shadow: 0 4px 30px var(--ShadowBoxColor);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     position: fixed;
@@ -22,7 +39,7 @@ nav {
     grid-gap: 10px;
 }
 .logoNav h1{
-    color: #fff;
+    color: var(--textColor);
     margin: 0;
     padding: 0;
 }
@@ -47,14 +64,14 @@ nav {
     background: transparent;
 }
 .buttonsNav::-webkit-scrollbar-thumb {
-    background-color: #FFD42A;
+    background-color: #EF6567;
     border-radius: 10px;
 }
 .buttonsNav button {
     cursor: pointer;
     border: none;
     border-bottom: 3px solid transparent;
-    color: #fff;
+    color: var(--textColor);
     background-color: transparent;
     transition: 0.4s ease-in;
 }
@@ -90,7 +107,7 @@ nav {
     cursor: pointer;
     border: none;
     border-bottom: 3px solid transparent;
-    color: #fff;
+    color: var(--textColor);
     background-color: transparent;
     transition: 0.4s ease-in;
 }
