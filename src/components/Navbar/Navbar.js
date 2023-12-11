@@ -57,11 +57,11 @@ setLang()
             <h1> EMOJI UNIVERSE</h1>
         </button>
         <div className='buttonsNav'>
-            <button onClick={()=>  window.location.hash = '#faces'}>{lang.CarinhasAniamis}</button>
+            <button onClick={()=>  window.location.hash = '#faces&Animais'}>{lang.CarinhasAniamis}</button>
             <button onClick={()=> window.location.hash = '#people'}>{lang.Pessoas}</button>
-            <button onClick={()=> window.location.hash = '#food'}>{lang.ComidasPlantas}</button>
-            <button onClick={()=> window.location.hash = '#celebrations'}>{lang.ComemoraçõesObjetos}</button>
-            <button onClick={()=> window.location.hash = '#transport'}>{lang.TransporteLocais} </button>
+            <button onClick={()=> window.location.hash = '#food&Nature'}>{lang.ComidasPlantas}</button>
+            <button onClick={()=> window.location.hash = '#commemorations&objects'}>{lang.ComemoraçõesObjetos}</button>
+            <button onClick={()=> window.location.hash = '#transportation&locations'}>{lang.TransporteLocais} </button>
             <button onClick={()=> window.location.hash =  '#symbols'}>{lang.Símbolos}</button>
         </div>
         <div id='socialBar' className='socialNav'>

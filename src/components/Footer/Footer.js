@@ -96,11 +96,11 @@ import { MdTranslate, MdDarkMode, MdLightMode } from "react-icons/md";
             <button onClick={()=> {window.location = '/'}}>
                 <img alt='Logo' src={favIcon} height={40} />
             </button>
-            <button onClick={()=>  window.location.hash = '#faces'}> {lang.CarinhasAniamis} </button>
+            <button onClick={()=>  window.location.hash = '#faces&Animais'}> {lang.CarinhasAniamis} </button>
             <button onClick={()=> window.location.hash = '#people'}> {lang.Pessoas} </button>
-            <button onClick={()=> window.location.hash = '#food'}> {lang.ComidasPlantas} </button>
-            <button onClick={()=> window.location.hash = '#celebrations'}> {lang.ComemoraçõesObjetos} </button>
-            <button onClick={()=> window.location.hash = '#transport'}> {lang.TransporteLocais}</button>
+            <button onClick={()=> window.location.hash = '#food&Nature'}> {lang.ComidasPlantas} </button>
+            <button onClick={()=> window.location.hash = '#commemorations&objects'}> {lang.ComemoraçõesObjetos} </button>
+            <button onClick={()=> window.location.hash = '#transportation&locations'}> {lang.TransporteLocais}</button>
             <button onClick={()=> window.location.hash =  '#symbols'}> {lang.Símbolos} </button>
         </div>
         <div className='about'>
